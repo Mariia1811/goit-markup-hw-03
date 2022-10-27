@@ -26,8 +26,23 @@ body {
     background-color: var(--white-color);
 }
 
-.list {
+.list,
+h1,
+h2,
+h3,
+p{
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:aqua;
 }
 
 /* header */
@@ -35,6 +50,8 @@ body {
 /* Logo */
 
 .logo {
+    margin-right: 93px;
+
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -46,45 +63,74 @@ body {
 .logo-web {
     color: var(--accent-color);
 }
+
 .logo:hover,
 .logo:focus{
-    text-shadow: 1px 1px 2px var(--accent-color);
+      text-decoration: underline var(--accent-color);
 }
 
 /* Page navigation */
 
+.current{
+    color: var(--accent-color);
+}
+
+.page-nav,
+.header-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .page-nav-link {
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    display: flex;
     color:inherit;
     text-decoration: none;
 }
 
 .page-nav-link:hover,
 .page-nav-link:focus{
-    color: var(--accent-color)
-}
-.current{
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
-.contacts {
+.contact,
+.page-nav-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     letter-spacing: 0.02em;
+}
+
+.contact + .contact,
+.page-nav-item + .page-nav-item{
+    margin-left: 50px;
+}
+
+.contact{
     text-decoration: none;
     color: var(--text-color);
 }
-
-.contacts:hover,
-.contacts:focus{
+.contact:hover,
+.contact:focus{
     color: var(--accent-color);
 }
 
 /* Main page Studio */
-
+.section{
+    text-align: center;
+    padding-bottom: 94px;
+  }
+  
 /* Hero */
-
 .hero{
+    background-color:var(--bcg-footer)
+}
+
+.hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     letter-spacing: 0.06em;
@@ -97,6 +143,11 @@ color: var(--accent-color);
 /* Button */
 
 .btn {
+    min-width: 216px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -104,7 +155,7 @@ color: var(--accent-color);
     background-color: var(--accent-color);
     color: var(--white-color);
     cursor: pointer;
-    border: none;
+   
 }
 
 .btn:hover,
@@ -113,10 +164,19 @@ color: var(--accent-color);
 }
 
 .hide{
-    color:var(--white-color)
+    padding-bottom: 70px;
+    color:transparent;
 }
-
+.preference{
+    display: flex;
+    text-align: left;
+}
+.preference-item +.preference-item{
+    margin-left: 10px;
+}
 .preference-title {
+    margin-bottom: 10px;
+
     font-size: 14px;
 }
 
@@ -127,14 +187,22 @@ color: var(--accent-color);
 
 /* Gallery */
 
-.title-section{
+.title-section{ 
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
 
-/* Our team */
-
+   /* Our team */
+.team{
+    margin-top: 94px;
+}
 .team-title,
 .team-text{
     font-size: 16px;
