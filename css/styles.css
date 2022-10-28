@@ -51,14 +51,16 @@ p{
 /* Logo */
 
 .logo {
-    margin-right: 93px;
-
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
     color: var(--text-logo);
+}
+
+.header-logo{
+    margin-right: 93px;
 }
 
 .logo-web {
@@ -94,6 +96,7 @@ p{
     color: var(--accent-color);
 }
 
+
 .contact,
 .page-nav-link{
     padding-top: 32px;
@@ -116,7 +119,9 @@ p{
 .contact:focus{
     color: var(--accent-color);
 }
-
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 /* Main page Studio */
 .section{
     text-align: center;
@@ -124,7 +129,7 @@ p{
     padding-bottom: 94px;
   }
 
-  .section:last-child{
+  .section:nth-child(2n+3){
     background-color: var(--color-section);
   }
 /* Hero */
@@ -226,13 +231,27 @@ justify-content: space-between;
 }
 
 /* Main page Portfolio */
+.filter{
+    margin-bottom: 50px;
+}
+.filter-item{
+    display: inline-block;
+}
 
 .filter-btn {
+    min-width: 73px;
+    padding: 6px 22px;
+    border-radius: 4px;
+
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
     cursor: pointer;
     border: none;
+}
+.filter-item + .filter-item {
+margin-left: 8px;
 }
 
 .filter-btn:hover,
@@ -241,11 +260,21 @@ justify-content: space-between;
     background-color: var(--accent-color);
 }
 
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.portfolio-item{
+    width: 370px;
+    margin: 15px;
+}
 .portfolio-link {
     text-decoration: none;
 }
 
 .portfolio-title{
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -253,6 +282,7 @@ justify-content: space-between;
 }
 
 .portfolio-text{
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     color:var(--text-color);
