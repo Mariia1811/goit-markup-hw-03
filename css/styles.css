@@ -27,7 +27,7 @@ body {
     background-color: var(--white-color);
 }
 
-.list,
+ul,
 h1,
 h2,
 h3,
@@ -165,7 +165,6 @@ p{
     background-color: var(--accent-color);
     color: var(--white-color);
     cursor: pointer;
-   
 }
 
 .btn:hover,
@@ -210,7 +209,11 @@ p{
 }
 
    /* Our team */
-
+.team-item {
+    border:#F5F4FA;
+    border-radius: 4px;
+    background-color:var(--white-color);
+}
 .team-list{
 display: flex;
 justify-content: space-between;
@@ -266,11 +269,20 @@ margin-left: 8px;
     margin: -15px;
 }
 .portfolio-item{
+    justify-content: flex-start;
     width: 370px;
     margin: 15px;
+    
+}
+.portfolio-img{
+    display: block;
 }
 .portfolio-link {
+    display: block;
+    padding: 20px 24px;
+    text-align: left;
     text-decoration: none;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolio-title{
@@ -282,7 +294,6 @@ margin-left: 8px;
 }
 
 .portfolio-text{
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     color:var(--text-color);
