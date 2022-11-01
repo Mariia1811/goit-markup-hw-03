@@ -18,6 +18,7 @@
     --color-section: #F5F4FA;
     --color-header-bottom: #ECECEC;
     --color-border-portfolio: #EEEEEE;
+   --color-activ-btn: #188CE8;
     }
 
 body {
@@ -160,7 +161,7 @@ p{
 .btn {
     min-width: 216px;
     padding: 10px 32px;
-    border: 1px solid transparent;
+    border:none;
     border-radius: 4px;
 
     font-weight: 700;
@@ -174,7 +175,7 @@ p{
 
 .btn:hover,
 .btn:focus {
-    color:var(--main-color-text);
+    background-color: var(--color-activ-btn);
 }
  /* Preference */
 
